@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Como selecionar elementos via JS</title>
+</head>
+
+<body>
+    <header>
+        <div class="title-header">
+            Selecionando elementos via JS
+        </div>
+    </header>
+    <main>
+        <div id="primeiro" class="card">
+            <h3> Caixa 1 </h3> <br>
+            Identificada pelo ID #primeiro
+        </div>
+
+        <div class="card">
+            <h3> Caixa 2 </h3> <br>
+            Sem identificação de especificidade, apenas pela tag div
+        </div>
+
+        <div class="card terceiro ultimo">
+            <h3> Caixa 3 </h3> <br>
+            Identificada pela class .terceiro e .ultimo
+        </div>
+
+    </main>
+    <div class="explicacao">
+        <br>
+        <div class="button-action">
+            <button onclick="eventoAdicionar()">
+                Adicionar destaque caixa 3
+            </button>
+            <button onclick="eventoRemover()">
+                Remover destaque caixa 3
+            </button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>Instruções</h4>
+        <p>Para selecionar elementos via JS podemos usar algumas funções como document.querySelector
+            passando um id ou class como parametro, logo após informar a função classlist para adicionar
+            uma nova classe ao item indicado no querySelector. <br> <br>
+            Exemplo: document.querySelector('#primeiro').classList.add('destaque') <br> <br>
+            destaque seria uma classe do css que foi formatada para ser atribuida no classList <br><br>
+
+            Outros Exemplos: <br>
+            document.getElementById('primeiro').classList.add('destaque') > se primeiro for id <br>
+            document.getElementByClassName('primeiro').classList.add('destaque') > se primeiro for class <br>
+            document.getElementByTagName('div').classList.add('destaque') > pegando pelo nome da tag <br><br>
+
+            ps: o primeiro card está com formato diferente pois foi aplicado a função: <br>
+            <em style="color: rgb(255, 255, 255); font-weight: 600;">
+                document.querySelector('#primeiro').classList.add('destaque') </em>
+        </p>
+    </div>
+    
+        <div class="download">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            <a class="botao-git" href="https://github.com/WagnerGeroldi/queryselector" target="_blank">
+            Ver código fonte no GitHub
+            </a>
+        </div>
+        <div class="botao-modelos">
+            <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
+            <a class="botao-link" href="https://wagnergeroldi.github.io/paginaexercicios/" target="_blank">
+               Ver mais exercícios</a>
+        </div>
+    <footer>
+        <div class="text-footer">
+            Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+
+</html>

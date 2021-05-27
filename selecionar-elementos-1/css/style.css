@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: rgb(4, 0, 255);
+    border-bottom: darkblue 5px solid;
+}
+
+.title-header,.text-footer {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.text-footer {
+    font-size: 1rem;
+    font-weight: initial;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: min(800px, 80%);
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: rgb(0, 0, 0);
+    border-top: darkblue 5px solid;
+
+}
+
+.card{
+    width: 250px;
+    height: 150px;
+    background: lightblue;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.explicacao {
+    width: min(800px, 80%);
+    margin: auto;
+    background: cornflowerblue;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: justify;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+.destaque {
+    background: darkblue;
+    border:rgb(0, 0, 0) 3px solid;
+}
+
+button {
+    padding: 10px;
+    background: blue;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    
+}
+
+button:hover {
+    color: teal;
+    transition: 0.3s;
+    background: rgb(0, 0, 82);
+}
+
+.botao-link {
+    background: rgb(45, 183, 238);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+
+i {
+    color: blue;
+   }
+.botao-link:hover {
+    background: rgb(55, 0, 255);
+    color: white;
+    transition: 0.5s;
+
+}
+
+.button-action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+a {
+    cursor: pointer;
+    font-weight: 900;
+    text-align: center;
+    color: darkblue;
+    margin-left: 15px;
+}
+
+.download,.botao-modelos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 710px) {
+    main {
+        justify-content: space-around;
+    }
+    button {
+        margin-bottom: 25px;
+    }
+}

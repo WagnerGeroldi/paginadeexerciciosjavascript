@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: rgb(4, 0, 255);
+    border-bottom: darkblue 5px solid;
+}
+
+.title-header,
+.text-footer {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.text-footer {
+    font-size: 1rem;
+    font-weight: initial;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: rgb(0, 0, 0);
+    border-top: darkblue 5px solid;
+
+}
+
+main {
+    width: min(700px, 80%);
+    margin: auto;
+    background: cornflowerblue;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.containergeral {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+    
+}
+.botao-link {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: black 0 0 1em;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.botao-link:hover {
+    background: rgb(55, 0, 255);
+    color: white;
+    box-shadow: rgb(255, 255, 255) 0 0 1em;
+    transition: 0.5s;
+
+}
+
+.botao-download {
+    cursor: pointer;
+    font-weight: 900;
+    text-align: center;
+    color: darkblue;
+    margin-left: 15px;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 710px) {
+    main {
+        justify-content: space-around;
+    }
+    .containergeral {
+        width: 70%;
+        
+    }
+
+    button {
+        margin-bottom: 25px;
+    }
+}
