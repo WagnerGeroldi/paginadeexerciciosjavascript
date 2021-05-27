@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACESSANDO ATRIBUTOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="title-header">
+            ACESSANDO ATRIBUTOS EM JS
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <h3>O texto abaixo vai mudar</h3>
+            <hr>
+            <div style="margin-top: 25px; font-size: 1.3rem; font-weight: bold;" class="texto">
+                Eu vou embora
+            </div>
+    </main>
+    <div class="explicacao">
+        <br>
+        <div class="button-action">
+            <button onclick="trocarTextoComNodeValue()">
+                TROCAR TEXTO
+            </button>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>Instruções</h4>
+        <p>Para trocar o texto usaremos a propriedade nodeValue, juntamente com a propriedade firstChild.
+            <br> <br>
+            Exemplo: <br> <strong>
+                const texto = document.querySelector('.texto')<br>
+                texto.firstChild.nodeValue = "Oi, trocamos de lugar"<br><br> </strong>
+            Desta maneira declaramos que texto recebe a classe texto, firstChild chama o primeiro
+            filho dentro da classe texto, e a propriedade nodeValue troca um pelo outro <br>
+        </p>
+    </div>
+    <main>
+        <div class="card">
+            <h3>Outra maneira</h3>
+            <hr>
+            <div style="margin-top: 25px; font-size: 1.3rem; font-weight: bold;" class="texto-box-two">
+                Eu vou embora também
+            </div>
+    </main>
+    <div class="explicacao">
+        <br>
+        <div class="button-action">
+            <button onclick="trocarTextoComInnerHTML()">
+                TROCAR TEXTO
+            </button>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>Instruções</h4>
+        <p>Outra maneira de fazer isto é com a propriedade innerHTML. Inclusive é mais utilizada!
+            <br> <br>
+            Exemplo: <br> <strong>
+                const texto = document.querySelector('.texto-box-two')<br>
+                texto.innerHTML = "Oi, eu também funciono :)"<br><br> </strong>
+            Desta maneira declaramos que texto recebe a classe texto-box-two, e a propriedade innerHTML
+             troca um pelo outro <br>
+        </p>
+    </div>
+    <div class="download">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        <a href="https://github.com/WagnerGeroldi/acessandoatributos" target="_blank">
+            Ver código fonte no GitHub
+        </a>
+    </div>
+    <div class="botao-modelos">
+        <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
+        <a class="botao-link" href="https://wagnergeroldi.github.io/paginadeexerciciosjavascript/">
+           Ver mais exercícios</a>
+    </div>
+    <footer>
+        <div class="text-footer">
+            Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+        </div>
+    </footer>
+    <script type="text/javascript" src="JS/scripts.js"></script>
+</body>
+
+</html>

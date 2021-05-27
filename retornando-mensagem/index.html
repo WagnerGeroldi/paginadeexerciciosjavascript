@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retornando Mensagem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="title-header">
+            RETORNANDO MENSAGEM
+        </div>
+    </header>
+    <main>
+        <form action="set">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nome">Digite seu nome Completo:</label>
+                    </td>
+                </tr>
+                <td>
+                    <input type="text" name="InputNomeCompleto" id="InputNomeCompleto" placeholder="Nome Completo">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sentimento">Como se sente hoje:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="sentimento">
+                            <option value="escolher">Escolha uma opção</option>
+                            <option value="sentimento-estou-otimo"> Estou ótimo</option>
+                            <option value="sentimento-estou-bem"> Estou bem</option>
+                            <option value="sentimento-estou-mais-ou-menos"> Estou mais ou menos</option>
+                            <option value="sentimento-nao-estou-bem"> Hoje não estou bem</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="botao-enviar" colspan="2">
+
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+        <button onclick="acaoderetorno()">
+            Enviar
+        </button>
+    </main>
+    <div class="explicacao">
+        <br>
+        <hr>
+        <br>
+        <h4>Instruções</h4>
+        <p>Para pegar informações em formulários existem várias técnicas, neste exemplo veremos 2, que será
+            a função "value" do input e a função selectedIndex do option.
+            <br> <br>
+            Exemplo: <br> <strong>
+                const dados = document.querySelector('#InputNomeCompleto') <br>
+                const nomeCompleto = dados.value <br>
+                const sentimentoUsuario = document.querySelector('#sentimento') <br>
+                let textoOption = sentimentoUsuario.options[sentimentoUsuario.selectedIndex].text <br> <br>
+            </strong>
+            Declaramos uma constante para pegar o conteúdo do input e depois com a propriedade value
+             capturamos o nome digitado. <br>
+             Logo após declaramos uma constante para pegar o conteúdo do select, e um let para pegar dentro do
+             select o option e capturar o texto do option com o .text <br>
+             Para gerar a mensagem foi utilizado um switch case com os textos do option e retornar um alert!
+        </p>
+    </div>
+
+    <div class="download">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        <a href="https://github.com/WagnerGeroldi/retornandomensagem" target="_blank">
+            Ver código fonte no GitHub
+        </a>
+    </div>
+    <div class="botao-modelos">
+        <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
+        <a class="botao-link" href="https://wagnergeroldi.github.io/paginadeexerciciosjavascript/">
+           Ver mais exercícios</a>
+    </div>
+    <footer>
+        <div class="text-footer">
+            Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+        </div>
+    </footer>
+    <script type="text/javascript" src="JS/scripts.js"></script>
+</body>
+</html>

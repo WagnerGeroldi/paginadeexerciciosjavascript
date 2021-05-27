@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade fadeIn e fadeOut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="title-header">
+            Propriedade Jquery fadeIn e fadeOut
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <h3>Select Elements</h3>
+            <hr>
+            <div style="margin-top: 25px; font-size: 1.3rem; font-weight: bold;" class="texto">
+                Conteúdo entrando com a propriedade fadeIn
+            </div>
+        </div>
+    </main>
+    <div class="explicacao">
+        <br>
+        <div class="button-action">
+            <button onclick="entrarCard()">
+                Mostrar conteúdo
+            </button>
+            <button onclick="sairCard()">
+                Esconder conteúdo
+            </button>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>Instruções</h4>
+        <p>Para utilizar a propriedade fadeIn é bastante simples, devemos definir qual objeto atingir
+            e em seguida informar o tempo no qual desejo que surja o conteúdo
+            <br> <br>
+            Exemplo: <br> <strong>
+
+                $('.card').hide()</strong> <small> > usado para esconder o conteúdo do card</small> <br>
+            <br>
+            <strong>
+                function clique() { <br>
+                $('.card').fadeIn(2000) <br>
+                } </strong><small> > esta função foi adicionada ao clique do botão</small> <br>
+            <strong> function sairCard() { <br>
+                $('.card').fadeOut(1000) <br>
+                } </strong> <small> > esta função foi adicionada ao clique do botão</small> <br> <br>
+
+            Desta maneira o card surge em fade, ou seja, opacidade de 0 > 100 em 2 segundos e sai em 1 segundo
+            opacidade de 100 > 0. <br>
+        </p>
+    </div>
+
+    <div class="download">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        <a href="https://github.com/WagnerGeroldi/elementsjquery" target="_blank">
+            Ver código fonte no GitHub
+        </a>
+    </div>
+    <div class="botao-modelos">
+        <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
+        <a class="botao-link" href="https://wagnergeroldi.github.io/paginadeexerciciosjavascript/">
+            Ver mais exercícios</a>
+    </div>
+    <footer>
+        <div class="text-footer">
+            Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+        </div>
+    </footer>
+
+    <!--Add Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="JS/scripts.js"></script>
+</body>
+
+</html>

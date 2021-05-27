@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando elementos - exemplo 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="title-header">
+            Selecionando elementos dentro de Listas com JS
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <h3>Lista de Itens</h3>
+            <hr>
+            <div>
+                <ul>
+                    <li>Primeira pessoa = Wagner</li>
+                    <li>Segunda pessoa = Tanise</li>
+                    <li>Terceira pessoa = Pietro</li>
+                </ul>
+
+            </div>
+    </main>
+    <div class="explicacao">
+        <br>
+        <div class="button-action">
+            <button onclick="clickWagner()">
+                Selecionar Wagner
+            </button>
+            <button onclick="clickTanise()">
+                Selecionar Tanise
+            </button>
+            <button onclick="clickPietro()">
+                Selecionar Pietro
+            </button>
+            <button onclick="apagar()">
+                Limpar tudo
+            </button>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>Instruções</h4>
+        <p>Para selecionar elementos de uma lista vamos usar as propriedades firstChild, lastChild, nextSibling
+            previousSibling. <br> <br>
+            Exemplo: <br>  <strong>
+            const lista = document.querySelector('div ul') <br>
+            let primeiro = lista.firstElementChild<br> </strong>
+            Desta maneira o primeiro elemento da lista será selecionado <br>
+            <strong>let segundo = primeiro.nextElementSibling </strong> <br>
+            Desta maneira o segundo elemento da lista será selecionado e para continuar selecionando
+            abaixo é só seguir a ordem da lista <br>
+            <br>
+            Para selecionar o ultimo da lista faremos assim: <br>
+            <strong> let ultimo = lista.lastElementChild</strong>
+
+        </p>
+    </div>
+    <div class="download">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        <a href="https://github.com/WagnerGeroldi/selectelementlist.git" target="_blank">
+            Ver código fonte no GitHub
+        </a>
+    </div>
+    <div class="botao-modelos">
+        <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
+        <a class="botao-link" href="https://wagnergeroldi.github.io/paginadeexerciciosjavascript/">
+           Ver mais exercícios</a>
+    </div>
+    <footer>
+        <div class="text-footer">
+            Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+        </div>
+    </footer>
+    <script type="text/javascript" src="Scripts/scripts.js"></script>
+</body>
+
+</html>

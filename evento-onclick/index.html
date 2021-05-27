@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTO onclick</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="title-header">
+            TRABALHANDO COM EVENTO onclick
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <hr>
+            <h3>MODO 1 PARA TRATAR O EVENTO</h3>
+            <a class="botao-click" onclick="goIn5s(event)" href="https://google.com.br">Abrir o Google</a>
+            <h3>MODO 2 PARA TRATAR O EVENTO</h3>
+            <a esperar-5segundos class="botao-click" href="https://google.com.br">Abrir o Google</a>
+            <hr>
+        </div>
+    </main>
+    <div class="explicacao">
+        <h4 style="text-align: center;">Instruções</h4>
+        <p>Para usar o envento onclick, podemos colocar ele de forma explícita dentro do html, deixando
+            bem claro que ele vai executar algum comando e também podemos criar um atributo personalizado
+            e chamar ele dentro script.
+            <br> <br>
+            Exemplo 1: Diretamente no HTML <br> <strong>
+                &lt;a class="botao-click" onclick="goIn5s(event)" href="https://google.com.br">Abrir o Google
+                &lt;/a&gt;<br> </strong>
+            Exemplo 2: no JavaScript <br> <strong>
+                Uso no HTML <br>
+                &lt;a esperar-5segundos class="botao-click" href="https://google.com.br">Abrir o Google &lt;/a &gt; <br>
+                <br>
+                Uso no JavaScript <br>
+                const teste2 = document.querySelector('[esperar-5segundos]') <br>
+                teste2.onclick = goIn5s
+                <br><br> </strong>
+            Neste segundo exemplo, mesmo sendo um método implícito, com o atributo personalizado deixa claro
+            que o algo irá acontecer. <br>
+        </p>
+    </div>
+    <div class="download">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        <a href="https://github.com/WagnerGeroldi/acessandoatributos" target="_blank">
+            Ver código fonte no GitHub
+        </a>
+    </div>
+    <div class="botao-modelos">
+        <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
+        <a class="botao-link" href="https://wagnergeroldi.github.io/paginadeexerciciosjavascript/">
+            Ver mais exercícios</a>
+    </div>
+    <footer>
+        <div class="text-footer">
+            Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+        </div>
+    </footer>
+    <script type="text/javascript" src="JS/scripts.js"></script>
+</body>
+
+</html>

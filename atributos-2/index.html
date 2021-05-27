@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACESSANDO ATRIBUTOS - Exemplo 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="title-header">
+            ACESSANDO ATRIBUTOS EM JS
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <h3>Card 1</h3>
+            <hr>
+            <div style="margin-top: 25px; font-size: 1.3rem; font-weight: bold;" class="texto">
+                Conteúdo
+            </div>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <hr>
+            <div style="margin-top: 25px; font-size: 1.3rem; font-weight: bold;" class="texto">
+                Conteúdo
+            </div>
+        </div>
+    </main>
+    <div class="explicacao">
+        <br>
+        <div class="button-action">
+            <button onclick="trocarClassCard1()">
+                Alterar Classe Card 1
+            </button>
+            <button onclick="trocarClassCard2()">
+                Alterar Classe Card 2
+            </button>
+            <button onclick="removerClassGeral()">
+                Remover Alteração
+            </button>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>Instruções</h4>
+        <p>Para trocar o nome do atributo vamos usar o comando setAttribute. No segundo box, vai ser a acrescentado
+            a propriedade nextElementSibling para pegar o segundo elemento dentro do card.
+            <br> <br>
+            Exemplo: <br> <strong>
+                const box = document.querySelector('.card') <br>
+                function trocarClassCard1() { <br>
+                box.setAttribute('class', 'cardalterado') <br>
+                } <br>
+                function trocarClassCard2() { <br>
+                box.nextElementSibling.setAttribute('class', 'cardalterado') <br>
+                }  <br>
+                function removerClassGeral() { <br>
+                    box.setAttribute('class', 'card') <br>
+                    box.nextElementSibling.setAttribute('class', 'card') <br>
+                }<br></strong>
+            Desta maneira declaramos que texto recebe a classe texto, firstChild chama o primeiro
+            filho dentro da classe texto, e a propriedade nodeValue troca um pelo outro <br>
+        </p>
+    </div>
+
+    <div class="download">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        <a href="https://github.com/WagnerGeroldi/alterandoatributos" target="_blank">
+            Ver código fonte no GitHub
+        </a>
+    </div>
+    <div class="botao-modelos">
+        <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
+        <a class="botao-link" href="https://wagnergeroldi.github.io/paginadeexerciciosjavascript/">
+           Ver mais exercícios</a>
+    </div>
+    <footer>
+        <div class="text-footer">
+            Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+        </div>
+    </footer>
+    <script type="text/javascript" src="JS/scripts.js"></script>
+</body>
+
+</html>
