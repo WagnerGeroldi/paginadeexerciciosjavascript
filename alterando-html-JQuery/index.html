@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluir Elementos HTML via JQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="title-header">
+            Incluir Elementos HTML via JQuery
+        </div>
+    </header>
+    <main>
+        <div class="card card-1" >
+            <h3>Adicionar via .append</h3>
+            <hr> 
+        </div>
+        <div class="card card-2">
+            <h3>adicionar via .html</h3>
+            <div class="adicionar-conteudo">
+                um conteúdo
+            </div>
+        </div>
+    </main>
+    <div class="explicacao">
+        <br>
+        <div class="button-action">
+            <button onclick="adicionarAppend()">
+                Adicionar Append
+            </button>
+            <button onclick="adicionarHTML()">
+                Adicionar HTML
+            </button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>Instruções</h4>
+        <p>Ao utilizar a propriedade .append, vamos adicionar um novo objeto HTML no final do elemento 
+            indicado no parametro da função. Quando adicionamos pela propriedade .html, ele substituirá o
+            conteúdo do elemento indicado pelo novo.
+            <br> <br>
+            Exemplo: <br> <strong>
+                Modelo dos scripts: <br> <br> </strong>
+                function adicionarAppend() { <br>
+                    $('.card-1').append('&lt;li>Wagner&lt;/li>').css( 'list-style', 'none') <br>
+                } <br>
+                function adicionarHTML() { <br>
+                   $('.adicionar-conteudo').html('&lt;li>WagnerHTML&lt;/li>').css( 'list-style', 'none') <br>
+                } <br>
+                
+               
+        </p>
+    </div>
+
+    <div class="download">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        <a href="https://github.com/WagnerGeroldi/adicionarelementojquery" target="_blank">
+            Ver código fonte no GitHub
+        </a>
+    </div>
+    <div class="botao-modelos">
+        <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
+        <a class="botao-link" href="https://wagnergeroldi.github.io/paginadeexerciciosjavascript/">
+            Ver mais exercícios</a>
+    </div>
+    <footer>
+        <div class="text-footer">
+            Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+        </div>
+    </footer>
+
+    <!--Add Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="JS/scripts.js"></script>
+
+    <script>
+        function adicionarAppend() {
+            $('.card-1').append('<li>Wagner</li>').css( 'list-style', 'none')
+        }
+        function adicionarHTML() {
+           $('.adicionar-conteudo').html('<li>WagnerHTML</li>').css( 'list-style', 'none')
+        }
+
+
+    </script>
+</body>
+
+</html>
