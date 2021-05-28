@@ -14,10 +14,11 @@
 <body>
     <header>
         <div class="title-header">
-            Brincando com cores
+            Playing whit colors
         </div>
     </header>
-    <div style="text-align: center; margin-top: 25px; font-weight: bold;">Digite uma cor em Inglês</div>
+    <div style="text-align: center; margin-top: 25px; font-weight: bold;">
+        Please enter a color in english</div>
     <main>
         <div class="card card-1">
             <input type="text" placeholder="Enter the color..."></input>
@@ -27,58 +28,58 @@
     </main>
     <div class="explicacao">
         <div style="text-align: center;">
-           > Conheca nosso modo escuro!! <
+            > Conheca nosso modo escuro!! < </div>
+                <br>
+                <div class="button-action">
+                    <button onclick="modoEscuro()">
+                        Dark mode
+                    </button>
+                    <button onclick="modoClaro()">
+                        Normal mode
+                    </button>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <h4>Instruções</h4>
+                <p>Uma forma muito bacana de capturar textos em inputs é a propriedade .keyUp
+                    <br> <br>
+                    Exemplo: <br> <strong>
+                        $('input').keyup( <br>
+                        function () {<br>
+                        const cor = $(this).val()<br>
+                        $('.card-2').css('background', cor).css('transition', '0.9s')<br>
+                        })<br> </strong>
+
+                    Assim conseguimos manipular algumas funções de forma interessante!
+
+
+                </p>
         </div>
-        <br>
-        <div class="button-action">
-            <button onclick="modoEscuro()">
-                Modo Escuro
-            </button>
-            <button onclick="modoClaro()">
-                Modo Normal
-            </button>
+
+        <div class="download">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            <a href="https://github.com/WagnerGeroldi/trabalhandocomcores" target="_blank">
+                Ver código fonte no GitHub
+            </a>
         </div>
-        <br>
-        <hr>
-        <br>
-        <h4>Instruções</h4>
-        <p>Uma forma muito bacana de capturar textos em inputs é a propriedade .keyUp
-            <br> <br>
-            Exemplo: <br> <strong>
-                $('input').keyup( <br>
-                function () {<br>
-                const cor = $(this).val()<br>
-                $('.card-2').css('background', cor).css('transition', '0.9s')<br>
-                })<br> </strong>
-
-            Assim conseguimos manipular algumas funções de forma interessante!
-
-
-        </p>
-    </div>
-
-    <div class="download">
-        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-        <a href="https://github.com/WagnerGeroldi/trabalhandocomcores" target="_blank">
-            Ver código fonte no GitHub
-        </a>
-    </div>
-    <div class="botao-modelos">
-        <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
-        <a class="botao-link" href="https://wagnergeroldi.github.io/paginadeexerciciosjavascript/">
-            Ver mais exercícios</a>
-    </div>
-    <footer>
-        <div class="text-footer">
-            Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+        <div class="botao-modelos">
+            <i class="fa fa-star fa-2x" aria-hidden="true" style="margin-right: 10px;"></i>
+            <a class="botao-link" href="https://wagnergeroldi.github.io/paginadeexerciciosjavascript/">
+                Ver mais exercícios</a>
         </div>
-    </footer>
+        <footer>
+            <div class="text-footer">
+                Exercício desenvolvido por <strong style="color: blue;"> Wagner Lucas Geroldi </strong>
+            </div>
+        </footer>
 
-    <!--Add Jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!--Add Jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="JS/scripts.js"></script>
+        <script type="text/javascript" src="JS/scripts.js"></script>
+ 
 </body>
 
 </html>

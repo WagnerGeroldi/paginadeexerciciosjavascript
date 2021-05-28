@@ -142,17 +142,23 @@ i {
     margin: auto;
     width: min-content;
 }
-.card-2 {
-    padding: 50px;
-    background: rgb(124, 124, 231);
-    border: darkblue 5px solid;
-}
-
 .card-1 {
     display: flex;
     align-items: center;
     background: none;
 }
+.card-2 {
+    padding: 50px;
+    background: lightblue;
+    border: darkblue 5px solid;
+}
+.card-3 {
+    padding: 30px;
+    background: white;
+    border: darkblue 5px solid;
+}
+
+
 
 input {
     padding: 5px;
